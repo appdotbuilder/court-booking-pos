@@ -40,14 +40,13 @@ export default function Welcome() {
                                     </Link>
                                 ) : (
                                     <>
-                                        <Link
-                                            href="/login"
-                                            className="text-gray-600 hover:text-primary font-medium transition-colors"
-                                        >
-                                            Login
+                                        <Link href="/login">
+                                            <Button variant="ghost" className="text-primary hover:text-primary/90 hover:bg-primary/10 font-medium">
+                                                Login
+                                            </Button>
                                         </Link>
                                         <Link href="/register">
-                                            <Button className="bg-primary hover:bg-primary/90 shadow-lg">
+                                            <Button className="bg-primary hover:bg-primary/90 text-white shadow-lg font-medium">
                                                 Daftar
                                             </Button>
                                         </Link>
@@ -75,12 +74,12 @@ export default function Welcome() {
                             {!auth.user && (
                                 <div className="flex flex-col sm:flex-row justify-center gap-4 max-w-md mx-auto">
                                     <Link href="/register" className="flex-1">
-                                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-lg py-6 shadow-xl hover:shadow-2xl transition-all">
+                                        <Button size="lg" className="w-full bg-primary hover:bg-primary/90 text-white text-lg py-6 shadow-xl hover:shadow-2xl transition-all font-semibold">
                                             🚀 Mulai Sekarang
                                         </Button>
                                     </Link>
                                     <Link href="/login" className="flex-1">
-                                        <Button variant="outline" size="lg" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white text-lg py-6 shadow-lg">
+                                        <Button variant="outline" size="lg" className="w-full border-2 border-primary text-primary hover:bg-primary hover:text-white text-lg py-6 shadow-lg font-semibold transition-all">
                                             💼 Login Admin
                                         </Button>
                                     </Link>
@@ -328,7 +327,7 @@ export default function Welcome() {
                                     <Button 
                                         size="lg" 
                                         variant="secondary" 
-                                        className="w-full bg-white text-primary hover:bg-gray-100 text-lg py-6 font-bold shadow-2xl"
+                                        className="w-full bg-white text-primary hover:bg-gray-100 text-lg py-6 font-bold shadow-2xl transition-all"
                                     >
                                         ✨ Daftar Gratis Sekarang
                                     </Button>
@@ -337,7 +336,7 @@ export default function Welcome() {
                                     <Button 
                                         size="lg" 
                                         variant="outline" 
-                                        className="w-full border-2 border-white text-white hover:bg-white hover:text-primary text-lg py-6 font-bold shadow-xl"
+                                        className="w-full border-2 border-white text-white hover:bg-white hover:text-primary text-lg py-6 font-bold shadow-xl transition-all"
                                     >
                                         🔑 Login Admin
                                     </Button>
